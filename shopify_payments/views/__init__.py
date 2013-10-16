@@ -1,0 +1,4 @@
+from charges_view import ChargesView
+from delete_charges_view import DeleteChargesView
+from subscribe_confirm_view import SubscribeConfirmView
+from subscribe_redirect_view import SubscribeRedirectView

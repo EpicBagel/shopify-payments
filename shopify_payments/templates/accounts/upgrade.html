@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load core %}
+{% block page_title %}<i class="icon-lock"></i> Upgrade your {{ app_name }} account{% endblock %}
+{% block main %}
+	<div class="row">
+		<div class="span12">
+			<p class="lead">{{ app_name }} allows you to effortlessly import and sync <span class="highlight">unlimited</span> content from Joomla!, Wordpress, Tumblr, Feedburner as Shopify native pages and blogs. <span class="highlight">Only $10 / month</span>.</p>
+			<p class="center">
+				<a href="{% url 'accounts:process-upgrade' %}" class="btn btn-large btn-primary">Start 14-day Free Trial</a>
+				{{ request.user.company.charge_id }}
+			</p>
+		</div>
+	</div>
+{% endblock %}
